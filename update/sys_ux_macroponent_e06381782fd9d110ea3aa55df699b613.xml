@@ -568,9 +568,14 @@
                       "value" : "simple-list"
                     },
                     "fields" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : {
-                        "table" : "x_58872_needit_needit"
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "table" ]
+                          }
+                        }
                       }
                     },
                     "params" : {
@@ -581,8 +586,10 @@
                           "value" : "My Active List"
                         },
                         "query" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : "active=true"
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "query" ]
+                          }
                         },
                         "listView" : {
                           "type" : "JSON_LITERAL",
@@ -807,13 +814,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-11 08:02:33</sys_created_on>
         <sys_id>e06381782fd9d110ea3aa55df699b613</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_e06381782fd9d110ea3aa55df699b613</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-11 08:25:17</sys_updated_on>
+        <sys_updated_on>2022-08-16 09:46:30</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
